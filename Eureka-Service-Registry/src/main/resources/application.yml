@@ -1,0 +1,51 @@
+
+spring:
+    profiles: Eureka1
+    application:
+      name: Eureka
+server:
+      port: 2329
+eureka:
+     instance: 
+        hostname: Eur1
+     client: 
+        fetch-registry: false
+        register-with-eureka: false
+        service-url:
+            defaultZone: http://Eur1:2329/eureka
+            
+#---
+
+#spring:
+#    profiles: Eureka2
+#    application:
+ #     name: Eureka
+#server:
+ #     port: 2330
+#eureka:
+#     instance: 
+#        hostname: Eur2
+#     client: 
+#        fetch-registry: true
+ #       register-with-eureka: true
+#        service-url:
+ #           defaultZone: http://Eur1:2329/eureka,http://Eur3:2331/eureka
+            
+#---
+
+#spring:
+ #   profiles: Eureka3
+ #   application:
+ #     name: Eureka
+#server:
+ #     port: 2331
+#eureka:
+ #    instance: 
+  #      hostname: Eur3
+  #   client: 
+  #      fetch-registry: true
+   #     register-with-eureka: true
+   #     service-url:
+   #         defaultZone: http://Eur2:2330/eureka,http://Eur1:2329/eureka            
+   
+
